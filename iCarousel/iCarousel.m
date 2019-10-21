@@ -2089,6 +2089,7 @@ NSComparisonResult compareViewDepth(UIView *view1, UIView *view2, iCarousel *sel
     else 
     {
     	[self scrollToItemAtIndex:self.currentItemIndex animated:YES];
+        [_delegate carousel:self didSelectItemAtIndex:self.currentItemIndex];
     }
 }
 
